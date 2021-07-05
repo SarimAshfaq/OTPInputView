@@ -64,7 +64,7 @@ public protocol OTPViewDelegate {
         textField.textAlignment = .center
         textField.contentHorizontalAlignment = .center
         textField.layer.cornerRadius = 10
-        textField.layer.borderColor = shadowColour
+        textField.layer.borderColor = shadowColour.cgColor
         textField.layer.borderWidth = 1
         textField.dropShadow(shadowOpacity: 0.6, shadowColor: shadowColour)
         textField.textColor = textColor
