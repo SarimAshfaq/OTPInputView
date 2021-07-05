@@ -59,11 +59,13 @@ public protocol OTPViewDelegate {
     
     fileprivate func setupTextFieldStyle(_ textField: UITextField) {
         textField.delegate = self // set up textfield delegate
-        textField.backgroundColor = .white
+        textField.backgroundColor = backgroundColour
         textField.keyboardType = .numberPad
         textField.textAlignment = .center
         textField.contentHorizontalAlignment = .center
         textField.layer.cornerRadius = 10
+        textField.layer.borderColor = shadowColour
+        textField.layer.borderWidth = 1
         textField.dropShadow(shadowOpacity: 0.6, shadowColor: shadowColour)
         textField.textColor = textColor
         textField.font = font
